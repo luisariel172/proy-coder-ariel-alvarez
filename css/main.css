@@ -15,6 +15,15 @@
         "footer";
 }
 
+.sucursal {
+    display: grid;
+    grid-template-areas:
+    "nombre"
+    "datos"
+    "foto"
+    "mapa";
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -327,6 +336,26 @@ label {
     font-size: 20px;
 }
 
+.nombre {
+    grid-area: nombre;
+}
+
+.datos {
+    grid-area: datos;
+}
+
+.foto {
+    grid-area: foto;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.nombre, .datos, .foto, .mapa {
+    padding: 5px;
+    text-align: center;
+}
 .roca {
     background-color: #a2f097;
 }
@@ -350,9 +379,6 @@ label {
 .alberdi {
     background-color: #cffdfa;
 }
-
-
-
 
 
 /*  M E D I A  Q U E R I E S */
@@ -482,4 +508,13 @@ label {
     justify-content: space-evenly;
 }
 
+.sucursal {
+    display: grid;
+    grid-template-areas:
+    "nombre nombre"
+    "datos datos"
+    "foto mapa";
+    grid-template-rows: 15% 20% 65%;
+    grid-template-columns: 50% 50%;
+}
 }
