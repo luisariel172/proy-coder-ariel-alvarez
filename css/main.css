@@ -356,28 +356,13 @@ label {
     padding: 5px;
     text-align: center;
 }
-.roca {
-    background-color: #a2f097;
+/* Gradientes diferenciando capital de provincia */
+.roca, .alem, .ybuena {
+    background:linear-gradient(to bottom, #85cc62 0%,#d5eec3 100%);
 }
 
-.alem {
-    background-color: #c5f7b5;
-}
-
-.ybuena {
-    background-color: #d8fcd1;
-}
-
-.concepcion {
-    background-color: #7ffcf5;
-}
-
-.aguilares {
-    background-color: #b3f8f5;
-}
-
-.alberdi {
-    background-color: #cffdfa;
+.concepcion, .aguilares, .alberdi {
+    background: linear-gradient(to bottom, #5ad4ce 0%, #d5eec3 100% );
 }
 
 
