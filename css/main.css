@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.master {
+    /* Estilos de grilla */
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "video"
+        "imagen-contacto"
+        "nosotros"
+        "footer";
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    /* ayudar al footer que se mantenga al final de la pagina */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*GLOBALES*/
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Posicionar el footer siempre abajo */
+#footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/*Definición de sistema de tamaños de fuentes*/
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+/*UTILIDADES*/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/* BOTONES */
+.boton {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.boton-contacto {
+    background-color: #2a91f1;
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+}
+
+.encabezado {
+    background-color: #005bb1;
+    padding: 2rem 3rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.encabezado.inicio {
+    background-color: #2a91f1;
+    height: 300px;
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "slogan"
+        "navegacion";
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 5fr;
+}
+
+.secundario {
+    background-color: #005bb1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.slogan {
+    grid-area: slogan;
+}
+
+.navegacion {
+    grid-area: navegacion;
+}
+
+/*NAVEGACION*/
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    align-content: center;
+}
+
+.navegacion li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navegacion a:hover {
+    color: red;
+}
+
+.encabezado.inicio h1 {
+    color: #dd0f0f;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+}
+
+/* Home-Seccion principal (promociones)*/
+
+main {
+    grid-area: main;
+}
+
+.contenedor-promos {
+    background-color: #b8edb9;
+    padding: 30px;
+}
+
+.promocion {
+    border: 1px solid green;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-promo {
+    padding: 1rem;
+}
+
+/* Home-seccion video */
+.video {
+    grid-area: video;
+}
+
+.video h2 {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+/* Home-seccion contacto para solicitar presupuestos */
+.imagen-contacto {
+    grid-area: imagen-contacto;
+    background-image: url(../img/presupuesto.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+}
+
+.contenido-contacto {
+    color: blue;
+    padding: 10px;
+}
+
+.contenido-contacto h2 {
+    font-size: 1.5rem;
+}
+
+.contenido-contacto p {
+    font-size: 1rem;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Home-seccion caracteristicas destacadas */
+.contenedor-nosotros {
+    background-color: rgb(173, 217, 233);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home-seccion nosotros */
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotros {
+    grid-area: nosotros;
+    border: 1px solid rgb(29, 45, 226);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.nosotros p {
+    text-align: left;
+}
+
+/* FOOTER */
+
+.pie {
+    background-color: #3d85c6;
+    /* ayudar al footer que se mantenga al final de la pagina */
+    margin-top: auto;
+    padding: 2px;
+}
+
+.contenedor-footer {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.navegacion-footer a:hover {
+    color: #0000ff;
+}
+
+.navegacion-footer ul {
+    display: flex;
+    padding: 10px;
+}
+
+.navegacion-footer ul a {
+    padding: 5px;
+}
+
+.contenedor-redes {
+    padding-right: 30px;
+}
+
+.contenedor-redes ul {
+    display: flex;
+}
+
+.contenedor-redes ul li a{
+    padding: 5px;
+}
+/* FORMULARIO */
+form {
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(171, 216, 229);
+    border-radius: 10px;
+}
+
+input,
+textarea,
+label {
+    padding: 5px;
+}
+
+/* PAGINA NOSOTROS */
+.xp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px 30px;
+}
+
+.xp p {
+    padding: 30px;
+    line-height: 40px;
+}
+
+/* COLORES SUCURSALES */
+.contenedor-sucursal {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.roca {
+    background-color: #a2f097;
+}
+
+.alem {
+    background-color: #c5f7b5;
+}
+
+.ybuena {
+    background-color: #d8fcd1;
+}
+
+.concepcion {
+    background-color: #7ffcf5;
+}
+
+.aguilares {
+    background-color: #b3f8f5;
+}
+
+.alberdi {
+    background-color: #cffdfa;
+}
+
+
+
+
+
+/*  M E D I A  Q U E R I E S */
+/* HEADER */
+@media screen and (min-width:768px) {
+    .encabezado {
+        padding: 1rem 3rem 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .encabezado.inicio {
+        background-image: url(../img/header.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+        min-height: 50rem;
+        grid-template-areas:
+            "logo slogan"
+            "navegacion navegacion";
+        grid-template-rows: 1fr 5fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .secundario {
+        padding: auto;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .slogan {
+        grid-area: slogan;
+    }
+
+    navegacion {
+        grid-area: navegacion;
+    }
+
+    /*NAVEGACION*/
+
+    ul li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+    .navegacion li a {
+        font-size: 25px;
+    }
+
+    .navegacion a:hover {
+        color: red;
+    }
+
+    .encabezado.inicio h1 {
+        font-size: 2.8rem;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    /* Home-Seccion principal (promociones)*/
+
+    .contenedor-promos {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .promocion {
+        margin: 5px;
+        padding: 5px;
+        flex-basis: 300px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    /* Home-seccion video */
+    .video h2 {
+        font-size: 2.3rem;
+        padding: 0;
+    }
+
+    /* Home-seccion contacto para solicitar presupuestos */
+    .imagen-contacto {
+        height: 30rem;
+    }
+
+    .contenido-contacto {
+        padding: 20px;
+    }
+
+    .contenido-contacto p {
+        font-size: 1.5rem;
+    }
+
+    /* Home-seccion nosotros */
+
+    .contenedor-nosotros {
+        flex-direction: row;
+        margin: 5px;
+        padding: 3px;
+    }
+
+/* FOOTER */
+.contenedor-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+/* PAGINA NOSOTROS */
+.xp {
+    flex-direction: row;
+}
+
+.xp p {
+    padding: 30px;
+    line-height: 40px;
+}
+
+/* COLORES SUCURSALES */
+.contenedor-sucursal {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+}
