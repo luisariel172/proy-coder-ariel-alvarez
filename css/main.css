@@ -24,6 +24,14 @@
     "mapa";
 }
 
+.marcas{
+    display: grid;
+    grid-template-areas:
+    "marca marca";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -328,6 +336,15 @@ label {
 .xp p {
     padding: 30px;
     line-height: 40px;
+}
+
+/* PAGINA PRODUCTOS */
+.marca {
+    grid-area: marca;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem;
 }
 
 /* COLORES SUCURSALES */
