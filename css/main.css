@@ -70,12 +70,13 @@ h4 {
 
 /*UTILIDADES*/
 .seccion {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .fw-300 {
     font-weight: 300;
+    margin: 1.5rem 0;
 }
 
 .centrar-texto {
@@ -201,11 +202,12 @@ main {
 /* Home-seccion video */
 .video {
     grid-area: video;
+    margin-bottom: 10rem;
 }
 
 .video h2 {
     font-size: 1.5rem;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
 /* Home-seccion contacto para solicitar presupuestos */
