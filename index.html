@@ -10,6 +10,8 @@
     <!-- referencia a tipografia usada -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <!-- Link a AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- referencia a estilo css en un solo archivo para todo el sitio  -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -58,7 +60,7 @@
             <h2 class="fw-300 centrar-texto">Promociones y Novedades</h2>
             <div class="contenedor-promos">
                 <div class="promocion">
-                    <img src="img/atendemos.jpg" alt="Imagen Seguimos atendiendo">
+                    <img data-aos="fade-up" data-aos-duration=1000 src="img/atendemos.jpg" alt="Imagen Seguimos atendiendo">
                     <div class="contenido-promo">
                         <h3>Solo por Whatsapp</h3>
                         <p>No dudes en realizar compras, presupuestos o consultas por Whatsapp, nuestros asesores te
@@ -68,7 +70,7 @@
                     </div>
                 </div>
                 <div class="promocion">
-                    <img src="img/text_resol.jpg" alt="Imagen Texturado Resol">
+                    <img data-aos="fade-up" data-aos-duration=2000 src="img/text_resol.jpg" alt="Imagen Texturado Resol">
                     <div>
                         <h3>Revestimiento texturado</h3>
                         <p>Recubrimiento plástico de alta resistencia, uso exterior e interior, diseñado para cubrir
@@ -78,7 +80,7 @@
                     </div>
                 </div>
                 <div class="promocion">
-                    <img src="img/3d_wall.jpg" alt="Imagen Paredes 3D">
+                    <img data-aos="fade-up" data-aos-duration=3000 src="img/3d_wall.jpg" alt="Imagen Paredes 3D">
                     <div>
                         <h3>3D Wall</h3>
                         <p>A lo último en Deco lo encontrás en nuestros locales!. Renová tus paredes con estos modernos
@@ -204,6 +206,11 @@
         </footer>
         <!--fin footer -->
     </div>
+    <!-- Sripts JS e inicializacion AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init ();    
+    </script>
 </body>
 
 </html>
