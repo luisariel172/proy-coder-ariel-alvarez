@@ -21,18 +21,50 @@
 
 <body>
     <div class="master">
-        <!-- inicio del header -->
-        <header class="encabezado inicio">
-            
-                <!-- logo de la empresa referenciando a pagina home -->
-                <a href="/">
+        <header >
+            <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo.svg"
+                            height="60" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2 " aria-current="page"
+                                    href="pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="pages/sucursales.html">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- logo de la empresa referenciando a pagina home
+                <a href="index.html">
                     <img src="img/logo.svg" alt="Logotipo Red de Colores">
-                </a>
-                <!-- Titulo principal con eslogan de la empresa -->
-            <div class="solgan">
+                </a> -->
+            <!-- Titulo principal con eslogan de la empresa -->
+            
+            <div class="encabezado inicio solgan">
                 <h1>para vivir el color ...</h1>
             </div>
-                <!--inicio menu navegacion header -->
+
+            <!--inicio menu navegacion header 
                 <nav class="navegacion">
                     <ul>
                         <li>
@@ -52,9 +84,9 @@
                         </li>
                     </ul>
                 </nav>
-                <!--fin menu navegacion header-->
-            
-            
+                fin menu navegacion header-->
+
+
         </header>
         <!-- fin del header -->
         <hr>

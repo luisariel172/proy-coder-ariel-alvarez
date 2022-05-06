@@ -19,33 +19,41 @@
 
 <body>
     <!-- inicio del header -->
-    <header class="encabezado secundario">
-        <a href="../index.html">
-            <img src="../img/logo.svg" alt="Logotipo Red de Colores">
-        </a>
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="sucursales.html">Sucursales</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.svg" height="60" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 " aria-current="page" href="Productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Titulo principal de la pagina -->
-    <h1 class="centrar-texto">PRODUCTOS</h1>
-    <h2 class="centrar-texto">Marcas que comercializamos</h2>
+    <h1 class="fw-300 centrar-texto">Productos</h1>
+    <h2 class="centrar-texto">Comercializamos solamente productos de primeras marcas</h2>
    <!-- Grilla con bootstrap -->
     <main class="contenedor">
         <div class="container">
