@@ -297,11 +297,19 @@ main {
 .contenedor-footer {
     padding: 20px 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    
 }
 
+.derechos {
+    padding-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    }
+    
 .navegacion-footer a:hover {
     color: #0000ff;
 }
@@ -410,19 +418,7 @@ label {
         justify-content: space-between;
         align-content: center;
     }
-
-    /* .encabezado.inicio {
-        background-image: url(../img/header.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 90vh;
-        min-height: 50rem;
-        grid-template-areas:
-            "logo slogan"
-            "navegacion navegacion";
-        grid-template-rows: 1fr 5fr;
-        grid-template-columns: 1fr 1fr;
-    } */
+    
 .slogan {
     grid-area: slogan;
     font-size: 6rem;
