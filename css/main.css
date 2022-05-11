@@ -61,8 +61,8 @@ img {
 
 /*UTILIDADES*/
 .seccion {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 .fw-300 {
@@ -410,8 +410,17 @@ label {
 
 
 /*  M E D I A  Q U E R I E S */
+
+
 /* HEADER */
 @media screen and (min-width:768px) {
+
+    /* UTILIDADES */
+.seccion {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+    
     .encabezado {
         padding: 1rem 3rem 3.5rem;
         display: flex;
